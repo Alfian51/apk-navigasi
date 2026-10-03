@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme using MaterialComponents DayNight NoActionBar -->
+    <style name="Base.Theme.Alfian04" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="editTextStyle">@style/Widget.Alfian04.EditText</item>
+    </style>
+
+    <style name="Theme.Alfian04" parent="Base.Theme.Alfian04" />
+
+    <!-- Style default untuk seluruh EditText: teks responsif, placeholder (hint) kontras & jelas -->
+    <style name="Widget.Alfian04.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:textColor">@color/edit_text_color</item>
+        <item name="android:textColorHint">@color/edit_text_hint</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Theme khusus Popup Menu yang responsif terhadap Light / Dark mode -->
+    <style name="ThemeOverlay.Alfian04.PopupMenu" parent="ThemeOverlay.AppCompat.DayNight">
+        <item name="android:colorBackground">@color/popup_background</item>
+        <item name="android:textColor">@color/popup_text</item>
+    </style>
+</resources>

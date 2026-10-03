@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode baru: Indigo malam + Violet -->
+    <color name="background">#14132B</color>
+    <color name="card_background">#1E1D3D</color>
+    <color name="text_primary">#F5F3FF</color>
+    <color name="text_secondary">#A5B4FC</color>
+    <color name="divider">#312E81</color>
+
+    <color name="popup_background">#1E1D3D</color>
+    <color name="popup_text">#FFFFFF</color>
+
+    <color name="edit_text_background">#1E1D3D</color>
+    <color name="edit_text_color">#FFFFFF</color>
+    <color name="edit_text_hint">#8B8BB8</color>
+</resources>
