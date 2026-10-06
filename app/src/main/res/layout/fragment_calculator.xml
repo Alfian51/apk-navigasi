@@ -30,7 +30,7 @@
                 android:paddingEnd="12dp"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
-                android:text="🔢 KALKULATOR CEPAT"
+                android:text="KALKULATOR"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -239,7 +239,7 @@
                         android:layout_weight="1"
                         android:insetTop="0dp"
                         android:insetBottom="0dp"
-                        android:text="＝ HITUNG"
+                        android:text="HITUNG"
                         android:textSize="13sp"
                         app:backgroundTint="@color/primary_dark"
                         app:cornerRadius="14dp" />

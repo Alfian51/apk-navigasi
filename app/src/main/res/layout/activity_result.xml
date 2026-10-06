@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Header sukses rata tengah -->
+        <!-- Header -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,8 +27,10 @@
                 android:layout_height="64dp"
                 android:background="#33FFFFFF"
                 android:gravity="center"
-                android:text="🎓"
-                android:textSize="30sp" />
+                android:text="H"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -39,24 +41,9 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:background="#33FFFFFF"
-                android:gravity="center"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:paddingTop="4dp"
-                android:paddingBottom="4dp"
-                android:text="ALFIAN04 • 04"
-                android:textColor="@color/white"
-                android:textSize="11sp"
-                android:textStyle="bold" />
         </LinearLayout>
 
-        <!-- Result Card BARU: semua rata tengah (dulu label kiri - nilai kanan) -->
+        <!-- Kartu hasil -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,31 +61,40 @@
                 android:orientation="vertical"
                 android:padding="22dp">
 
-                <!-- Grade lingkaran BESAR di tengah atas (dulu kecil di kanan) -->
+                <!-- Grade: lingkaran hanya huruf, keterangan di bawahnya -->
                 <TextView
                     android:id="@+id/tv_res_grade"
-                    android:layout_width="84dp"
-                    android:layout_height="84dp"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
                     android:background="@drawable/bg_avatar_circle"
                     android:gravity="center"
-                    android:text="-"
+                    android:text="A"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:textSize="36sp"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_res_grade_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="@string/result_grade_label"
-                    android:textColor="@color/text_secondary"
-                    android:textSize="12sp" />
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_pill_badge"
+                    android:gravity="center"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Sangat Baik"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
+                <!-- Nama -->
                 <TextView
                     android:id="@+id/tv_res_name"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="14dp"
                     android:gravity="center"
                     android:text="-"
                     android:textColor="@color/text_primary"
@@ -108,6 +104,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
                     android:text="@string/result_name_label"
                     android:textColor="@color/text_secondary"
                     android:textSize="12sp" />
@@ -115,11 +112,11 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="14dp"
-                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:background="@color/divider" />
 
-                <!-- Grid 2 kolom: Jurusan | Nilai (dulu baris vertikal) -->
+                <!-- Jurusan | Nilai -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -127,13 +124,13 @@
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginEnd="6dp"
                         android:layout_weight="1"
                         android:background="@drawable/bg_card_rounded"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:orientation="vertical"
-                        android:padding="12dp">
+                        android:padding="14dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -144,30 +141,25 @@
 
                         <TextView
                             android:id="@+id/tv_res_jurusan"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="6dp"
-                            android:background="@drawable/bg_pill_badge"
                             android:gravity="center"
-                            android:paddingStart="12dp"
-                            android:paddingEnd="12dp"
-                            android:paddingTop="4dp"
-                            android:paddingBottom="4dp"
                             android:text="-"
-                            android:textColor="@color/primary_dark"
-                            android:textSize="12sp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="13sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginStart="6dp"
                         android:layout_weight="1"
                         android:background="@drawable/bg_card_rounded"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:orientation="vertical"
-                        android:padding="12dp">
+                        android:padding="14dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -180,40 +172,43 @@
                             android:id="@+id/tv_res_score"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
+                            android:layout_marginTop="4dp"
                             android:text="0"
                             android:textColor="@color/text_primary"
-                            android:textSize="30sp"
+                            android:textSize="32sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
 
+                <!-- Status -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="16dp"
                     android:text="@string/result_status_label"
                     android:textColor="@color/text_secondary"
-                    android:textSize="13sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/tv_res_status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/bg_pill_badge"
                     android:gravity="center"
                     android:minWidth="160dp"
-                    android:padding="12dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
                     android:text="LULUS"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Tombol BARU berdampingan (dulu vertikal) -->
+        <!-- Tombol -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -228,7 +223,7 @@
                 android:layout_weight="1"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="← KEMBALI"
+                android:text="KEMBALI"
                 android:textSize="13sp"
                 app:backgroundTint="@color/primary"
                 app:cornerRadius="14dp" />
@@ -241,7 +236,7 @@
                 android:layout_weight="1"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="🏠 BERANDA"
+                android:text="BERANDA"
                 android:textSize="13sp"
                 app:backgroundTint="@color/divider"
                 app:cornerRadius="14dp" />

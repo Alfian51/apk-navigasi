@@ -27,8 +27,10 @@
                 android:layout_height="56dp"
                 android:background="#33FFFFFF"
                 android:gravity="center"
-                android:text="📄"
-                android:textSize="26sp" />
+                android:text="D"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -49,7 +51,7 @@
             android:layout_marginTop="14dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            android:text="📍 BUKA PETA LOKASI"
+            android:text="BUKA PETA LOKASI"
             app:backgroundTint="@color/accent"
             app:cornerRadius="14dp" />
 
@@ -78,7 +80,7 @@
                     android:paddingEnd="12dp"
                     android:paddingTop="4dp"
                     android:paddingBottom="4dp"
-                    android:text="ℹ️ PANDUAN ALFIAN04"
+                    android:text="PANDUAN"
                     android:textColor="@color/primary_dark"
                     android:textSize="11sp"
                     android:textStyle="bold" />

@@ -96,22 +96,28 @@ public class FeatureFragment extends Fragment {
         }
 
         // Hitung Grade dan Status
-        String grade;
+        String gradeLetter;
+        String gradeDesc;
         String status;
         if (score >= 85) {
-            grade = "A (Sangat Baik)";
+            gradeLetter = "A";
+            gradeDesc = "Sangat Baik";
             status = "LULUS";
         } else if (score >= 75) {
-            grade = "B (Baik)";
+            gradeLetter = "B";
+            gradeDesc = "Baik";
             status = "LULUS";
         } else if (score >= 60) {
-            grade = "C (Cukup)";
+            gradeLetter = "C";
+            gradeDesc = "Cukup";
             status = "LULUS";
         } else if (score >= 50) {
-            grade = "D (Kurang)";
+            gradeLetter = "D";
+            gradeDesc = "Kurang";
             status = "TIDAK LULUS";
         } else {
-            grade = "E (Sangat Kurang)";
+            gradeLetter = "E";
+            gradeDesc = "Sangat Kurang";
             status = "TIDAK LULUS";
         }
 
@@ -121,7 +127,9 @@ public class FeatureFragment extends Fragment {
             intent.putExtra("EXTRA_NAME", name);
             intent.putExtra("EXTRA_JURUSAN", jurusan);
             intent.putExtra("EXTRA_SCORE", score);
-            intent.putExtra("EXTRA_GRADE", grade);
+            intent.putExtra("EXTRA_GRADE_LETTER", gradeLetter);
+            intent.putExtra("EXTRA_GRADE_DESC", gradeDesc);
+            intent.putExtra("EXTRA_GRADE", gradeLetter + " (" + gradeDesc + ")");
             intent.putExtra("EXTRA_STATUS", status);
             startActivity(intent);
         }

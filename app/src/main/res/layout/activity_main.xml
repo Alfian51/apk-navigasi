@@ -29,8 +29,6 @@
                 android:background="@android:color/transparent"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:popupTheme="@style/ThemeOverlay.Alfian04.PopupMenu"
-                app:subtitle="@string/app_subtitle"
-                app:subtitleTextColor="#D6CCFF"
                 app:title="@string/app_name"
                 app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
                 app:titleTextColor="@color/white" />

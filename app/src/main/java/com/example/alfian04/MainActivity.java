@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void showAboutDialog() {
         new AlertDialog.Builder(this)
                 .setTitle("Tentang Alfian04")
-                .setMessage("Aplikasi Android Alfian04 oleh Alfian Dafari (04)\n\nFitur Navigasi Lengkap:\n- Navigation Drawer & Hamburger Menu\n- Options Menu & Ikon Keluar Toolbar\n- TabLayout & ViewPager2\n- 5 Fragment Utama:\n  1. Beranda\n  2. Form Penilaian Siswa\n  3. Kalkulator Cepat\n  4. Panduan & Informasi\n  5. Peta Lokasi Google Maps Dinamis\n\n100% Java & XML Layout • Tema Indigo–Violet.")
+                .setMessage("Aplikasi Alfian04 untuk pengelolaan data praktis.\n\nFitur utama:\n- Beranda\n- Form Penilaian\n- Kalkulator\n- Panduan dan Informasi\n- Peta Lokasi")
                 .setPositiveButton("TUTUP", (dialog, which) -> dialog.dismiss())
                 .show();
     }

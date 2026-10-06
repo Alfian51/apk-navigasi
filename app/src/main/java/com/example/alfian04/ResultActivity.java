@@ -19,6 +19,7 @@ public class ResultActivity extends AppCompatActivity {
         TextView tvJurusan = findViewById(R.id.tv_res_jurusan);
         TextView tvScore = findViewById(R.id.tv_res_score);
         TextView tvGrade = findViewById(R.id.tv_res_grade);
+        TextView tvGradeDesc = findViewById(R.id.tv_res_grade_desc);
         TextView tvStatus = findViewById(R.id.tv_res_status);
 
         Button btnBack = findViewById(R.id.btn_res_back);
@@ -30,21 +31,44 @@ public class ResultActivity extends AppCompatActivity {
             String name = intent.getStringExtra("EXTRA_NAME");
             String jurusan = intent.getStringExtra("EXTRA_JURUSAN");
             double score = intent.getDoubleExtra("EXTRA_SCORE", 0.0);
+            String gradeLetter = intent.getStringExtra("EXTRA_GRADE_LETTER");
+            String gradeDesc = intent.getStringExtra("EXTRA_GRADE_DESC");
             String grade = intent.getStringExtra("EXTRA_GRADE");
             String status = intent.getStringExtra("EXTRA_STATUS");
 
+            // Kompatibilitas: pecah "A (Sangat Baik)" jadi huruf + keterangan
+            if ((gradeLetter == null || gradeDesc == null) && grade != null) {
+                int open = grade.indexOf('(');
+                if (open > 0) {
+                    gradeLetter = grade.substring(0, open).trim();
+                    int close = grade.indexOf(')', open);
+                    gradeDesc = close > open
+                            ? grade.substring(open + 1, close).trim()
+                            : grade.substring(open + 1).trim();
+                } else {
+                    gradeLetter = grade.trim();
+                    gradeDesc = "";
+                }
+            }
+
             tvName.setText(name != null ? name : "-");
             tvJurusan.setText(jurusan != null ? jurusan : "-");
-            tvScore.setText(String.valueOf(score));
-            tvGrade.setText(grade != null ? grade : "-");
+            // Tampilkan 90 bukan 90.0 agar rapi
+            if (score == Math.rint(score)) {
+                tvScore.setText(String.valueOf((long) score));
+            } else {
+                tvScore.setText(String.valueOf(score));
+            }
+            tvGrade.setText(gradeLetter != null && !gradeLetter.isEmpty() ? gradeLetter : "-");
+            tvGradeDesc.setText(gradeDesc != null && !gradeDesc.isEmpty() ? gradeDesc : "Hasil Penilaian");
             
             if (status != null) {
                 tvStatus.setText(status);
-                if (status.equalsIgnoreCase("LULUS")) {
-                    tvStatus.setBackgroundColor(ContextCompat.getColor(this, R.color.success));
-                } else {
-                    tvStatus.setBackgroundColor(ContextCompat.getColor(this, R.color.error));
-                }
+                int color = status.equalsIgnoreCase("LULUS")
+                        ? ContextCompat.getColor(this, R.color.success)
+                        : ContextCompat.getColor(this, R.color.error);
+                tvStatus.setBackgroundTintList(android.content.res.ColorStateList.valueOf(color));
+                tvStatus.setTextColor(ContextCompat.getColor(this, R.color.white));
             } else {
                 tvStatus.setText("-");
             }

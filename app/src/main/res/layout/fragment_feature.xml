@@ -27,8 +27,10 @@
                 android:layout_height="56dp"
                 android:background="#33FFFFFF"
                 android:gravity="center"
-                android:text="📝"
-                android:textSize="26sp" />
+                android:text="F"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -76,7 +78,7 @@
                     android:paddingEnd="12dp"
                     android:paddingTop="4dp"
                     android:paddingBottom="4dp"
-                    android:text="👤 DATA DIRI • ALFIAN04"
+                    android:text="DATA DIRI"
                     android:textColor="@color/primary_dark"
                     android:textSize="11sp"
                     android:textStyle="bold" />
@@ -152,7 +154,7 @@
                         android:layout_weight="1"
                         android:insetTop="0dp"
                         android:insetBottom="0dp"
-                        android:text="✨ PROSES"
+                        android:text="@string/btn_process"
                         android:textSize="13sp"
                         app:backgroundTint="@color/primary"
                         app:cornerRadius="14dp" />

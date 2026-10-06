@@ -35,21 +35,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:background="#33FFFFFF"
-                android:gravity="center"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:paddingTop="4dp"
-                android:paddingBottom="4dp"
-                android:text="✦ ALFIAN04 • NAVIGASI MODERN"
-                android:textColor="@color/white"
-                android:textSize="11sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="@string/home_welcome_title"
@@ -84,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="12dp"
-                android:text="💡 Ketuk kartu di bawah untuk loncat antar halaman."
+                android:text="Ketuk kartu di bawah untuk berpindah halaman."
                 android:textColor="@color/text_secondary"
                 android:textSize="13sp" />
         </com.google.android.material.card.MaterialCardView>
@@ -135,8 +120,10 @@
                     android:layout_height="48dp"
                     android:background="@drawable/bg_pill_badge"
                     android:gravity="center"
-                    android:text="📝"
-                    android:textSize="22sp" />
+                    android:text="F"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -156,7 +143,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Input nilai &amp; cek kelulusan"
+                        android:text="Input nilai dan cek kelulusan"
                         android:textColor="@color/text_secondary"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -167,7 +154,7 @@
                     android:layout_height="48dp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:text="BUKA ›"
+                    android:text="BUKA"
                     android:textSize="12sp"
                     app:backgroundTint="@color/primary"
                     app:cornerRadius="12dp" />
@@ -197,8 +184,10 @@
                     android:layout_height="48dp"
                     android:background="@drawable/bg_pill_badge"
                     android:gravity="center"
-                    android:text="🔢"
-                    android:textSize="22sp" />
+                    android:text="K"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -229,7 +218,7 @@
                     android:layout_height="48dp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:text="BUKA ›"
+                    android:text="BUKA"
                     android:textSize="12sp"
                     app:backgroundTint="@color/primary_dark"
                     app:cornerRadius="12dp" />
@@ -259,8 +248,10 @@
                     android:layout_height="48dp"
                     android:background="@drawable/bg_pill_badge"
                     android:gravity="center"
-                    android:text="📄"
-                    android:textSize="22sp" />
+                    android:text="D"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -291,7 +282,7 @@
                     android:layout_height="48dp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:text="BUKA ›"
+                    android:text="BUKA"
                     android:textSize="12sp"
                     app:backgroundTint="@color/accent_dark"
                     app:cornerRadius="12dp" />
@@ -321,8 +312,10 @@
                     android:layout_height="48dp"
                     android:background="@drawable/bg_pill_badge"
                     android:gravity="center"
-                    android:text="📍"
-                    android:textSize="22sp" />
+                    android:text="P"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -353,7 +346,7 @@
                     android:layout_height="48dp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:text="BUKA ›"
+                    android:text="BUKA"
                     android:textSize="12sp"
                     app:backgroundTint="@color/accent"
                     app:cornerRadius="12dp" />

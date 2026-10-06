@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Alfian04</string>
-    <string name="app_subtitle">Navigasi Modern • Java Murni</string>
     
     <!-- Navigation Tabs & Drawer -->
     <string name="tab_home">Beranda</string>
@@ -22,20 +21,20 @@
     
     <!-- Drawer Header -->
     <string name="drawer_title">Alfian04 App</string>
-    <string name="drawer_subtitle">Navigasi Modern • Alfian Dafari • 04</string>
+    <string name="drawer_subtitle">Aplikasi Data dan Utilitas</string>
     
     <!-- Home Fragment -->
-    <string name="home_welcome_title">Halo, Alfian Dafari! 👋</string>
-    <string name="home_welcome_desc">Jelajahi 5 fitur utama Alfian04 — Drawer, Tab geser, Form Nilai, Kalkulator aman, dan Peta dinamis. Semua ditulis murni Java + XML.</string>
-    <string name="home_quick_access">Menu Utama — ketuk kartu untuk pindah:</string>
+    <string name="home_welcome_title">Selamat Datang</string>
+    <string name="home_welcome_desc">Kelola data nilai, berhitung cepat, baca panduan, dan buka peta dengan mudah dalam satu tempat.</string>
+    <string name="home_quick_access">Menu Utama</string>
     <string name="btn_goto_feature">1. Form Input Data Siswa</string>
     <string name="btn_goto_calculator">2. Kalkulator Matematika</string>
     <string name="btn_goto_document">3. Dokumen &amp; Informasi</string>
     <string name="btn_open_maps">4. Buka Peta Lokasi</string>
     
     <!-- Feature Fragment -->
-    <string name="feature_title">Form Penilaian Siswa</string>
-    <string name="feature_desc">Isi nama, jurusan, dan skor (0–100) — grade &amp; status lulus otomatis.</string>
+    <string name="feature_title">Form Penilaian</string>
+    <string name="feature_desc">Isi nama, jurusan, dan skor (0–100) untuk melihat hasil.</string>
     <string name="label_name">Nama Lengkap</string>
     <string name="hint_name">Contoh: Alfian Dafari</string>
     <string name="label_jurusan">Pilihan Jurusan</string>
@@ -45,8 +44,8 @@
     <string name="btn_reset">RESET FORM</string>
     
     <!-- Calculator Fragment -->
-    <string name="calc_title">Kalkulator Cepat</string>
-    <string name="calc_desc">Pilih operator di bawah, masukkan dua angka, lalu tekan HITUNG. Anti-crash pembagian nol.</string>
+    <string name="calc_title">Kalkulator</string>
+    <string name="calc_desc">Masukkan dua angka, pilih operator, lalu tekan Hitung.</string>
     <string name="label_num1">Angka Pertama</string>
     <string name="hint_num1">Contoh: 12</string>
     <string name="label_num2">Angka Kedua</string>
@@ -61,13 +60,13 @@
     <string name="default_calc_result">0</string>
     
     <!-- Document Fragment -->
-    <string name="doc_title">Panduan Pakai Alfian04</string>
-    <string name="doc_content">Alfian04 adalah aplikasi pembelajaran navigasi Android karya Alfian Dafari (04) yang ditulis 100% Java + XML:\n\n1. Drawer samping &amp; ikon hamburger untuk lompat antar 5 halaman.\n2. Tab + ViewPager2: geser kiri-kanan dengan indikator sinkron.\n3. Menu titik tiga berisi Tentang; ikon keluar selalu terlihat di toolbar.\n4. Form nilai bervalidasi + kalkulator anti-bagi-nol + Maps aman (try-catch).\n5. Tampilan adaptif terang/gelap dengan aksen Indigo–Violet.</string>
+    <string name="doc_title">Panduan Penggunaan</string>
+    <string name="doc_content">Aplikasi ini membantu pengelolaan data secara praktis:\n\n1. Gunakan menu samping atau tab untuk berpindah halaman.\n2. Geser kiri-kanan untuk pindah antar halaman dengan cepat.\n3. Menu titik tiga berisi informasi aplikasi.\n4. Form nilai bervalidasi, kalkulator aman dari pembagian nol, dan peta dibuka dengan aman.\n5. Tampilan menyesuaikan mode terang dan gelap.</string>
     <string name="btn_goto_maps_page">BUKA HALAMAN PETA LOKASI</string>
     
     <!-- Maps Fragment -->
-    <string name="maps_title">Jelajah Peta Google Maps</string>
-    <string name="maps_desc">Ketik alamat apa pun, atau coba pintasan Monas — dibuka via intent aman.</string>
+    <string name="maps_title">Peta Lokasi</string>
+    <string name="maps_desc">Ketik alamat tujuan untuk dibuka di Google Maps.</string>
     <string name="label_maps_input">Lokasi / Tempat yang Ingin Dituju</string>
     <string name="hint_maps_input">Contoh: Monas Jakarta, Alun-alun Surakarta, dll.</string>
     <string name="btn_search_maps">BUKA DI GOOGLE MAPS</string>
