@@ -24,13 +24,11 @@ public class HomeFragment extends Fragment {
 
         Button btnQuickFeature = view.findViewById(R.id.btn_quick_feature);
         Button btnQuickCalc = view.findViewById(R.id.btn_quick_calc);
-        Button btnQuickDoc = view.findViewById(R.id.btn_quick_doc);
         Button btnQuickMaps = view.findViewById(R.id.btn_quick_maps);
 
         btnQuickFeature.setOnClickListener(v -> switchTab(1));
         btnQuickCalc.setOnClickListener(v -> switchTab(2));
-        btnQuickDoc.setOnClickListener(v -> switchTab(3));
-        btnQuickMaps.setOnClickListener(v -> switchTab(4));
+        btnQuickMaps.setOnClickListener(v -> switchTab(3));
 
         return view;
     }

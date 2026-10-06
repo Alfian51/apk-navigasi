@@ -22,8 +22,6 @@ public class MainPagerAdapter extends FragmentStateAdapter {
             case 2:
                 return new CalculatorFragment();
             case 3:
-                return new DocumentFragment();
-            case 4:
                 return new MapsFragment();
             default:
                 return new HomeFragment();
@@ -32,6 +30,6 @@ public class MainPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 5;
+        return 4;
     }
 }

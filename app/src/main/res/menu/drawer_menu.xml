@@ -11,9 +11,6 @@
             android:id="@+id/nav_calculator"
             android:title="@string/menu_calculator" />
         <item
-            android:id="@+id/nav_document"
-            android:title="@string/menu_document" />
-        <item
             android:id="@+id/nav_maps"
             android:title="@string/menu_maps" />
     </group>

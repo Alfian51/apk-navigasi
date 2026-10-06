@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             "Beranda",
             "Fitur Data",
             "Kalkulator",
-            "Dokumen",
             "Peta Lokasi"
     };
 
@@ -37,9 +36,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 1. Inisialisasi Toolbar
+        // 1. Inisialisasi Toolbar (judul dikosongkan)
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
 
         // 2. Inisialisasi DrawerLayout & NavigationView
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -57,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        // 4. Inisialisasi ViewPager2 & PageAdapter (5 Halaman)
+        // 4. Inisialisasi ViewPager2 & PageAdapter (4 Halaman)
         viewPager = findViewById(R.id.view_pager);
         MainPagerAdapter pagerAdapter = new MainPagerAdapter(this);
         viewPager.setAdapter(pagerAdapter);
@@ -86,9 +88,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         navigationView.setCheckedItem(R.id.nav_calculator);
                         break;
                     case 3:
-                        navigationView.setCheckedItem(R.id.nav_document);
-                        break;
-                    case 4:
                         navigationView.setCheckedItem(R.id.nav_maps);
                         break;
                 }
@@ -127,10 +126,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             viewPager.setCurrentItem(1, true);
         } else if (id == R.id.nav_calculator) {
             viewPager.setCurrentItem(2, true);
-        } else if (id == R.id.nav_document) {
-            viewPager.setCurrentItem(3, true);
         } else if (id == R.id.nav_maps) {
-            viewPager.setCurrentItem(4, true);
+            viewPager.setCurrentItem(3, true);
         } else if (id == R.id.nav_exit) {
             finish();
         }
@@ -152,7 +149,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void showAboutDialog() {
         new AlertDialog.Builder(this)
                 .setTitle("Tentang Alfian04")
-                .setMessage("Aplikasi Alfian04 untuk pengelolaan data praktis.\n\nFitur utama:\n- Beranda\n- Form Penilaian\n- Kalkulator\n- Panduan dan Informasi\n- Peta Lokasi")
+                .setMessage("Aplikasi Alfian04 untuk pengelolaan data praktis.\n\nFitur utama:\n- Beranda\n- Form Penilaian\n- Kalkulator\n- Peta Lokasi")
                 .setPositiveButton("TUTUP", (dialog, which) -> dialog.dismiss())
                 .show();
     }

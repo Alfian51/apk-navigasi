@@ -5,13 +5,11 @@
     <string name="tab_home">Beranda</string>
     <string name="tab_feature">Fitur Data</string>
     <string name="tab_calculator">Kalkulator</string>
-    <string name="tab_document">Dokumen</string>
     <string name="tab_maps">Peta Lokasi</string>
     
     <string name="menu_home">Beranda</string>
     <string name="menu_feature">Fitur Input Data</string>
     <string name="menu_calculator">Kalkulator</string>
-    <string name="menu_document">Dokumen &amp; Informasi</string>
     <string name="menu_maps">Peta Lokasi (Google Maps)</string>
     <string name="menu_exit">Keluar Aplikasi</string>
     
@@ -19,18 +17,16 @@
     <string name="action_about">Tentang Aplikasi</string>
     <string name="action_exit">Keluar</string>
     
-    <!-- Drawer Header -->
-    <string name="drawer_title">Alfian04 App</string>
+    <!-- Drawer Header (judul dihapus sesuai permintaan) -->
     <string name="drawer_subtitle">Aplikasi Data dan Utilitas</string>
     
     <!-- Home Fragment -->
     <string name="home_welcome_title">Selamat Datang</string>
-    <string name="home_welcome_desc">Kelola data nilai, berhitung cepat, baca panduan, dan buka peta dengan mudah dalam satu tempat.</string>
+    <string name="home_welcome_desc">Kelola data nilai, berhitung cepat, dan buka peta dengan mudah dalam satu tempat.</string>
     <string name="home_quick_access">Menu Utama</string>
     <string name="btn_goto_feature">1. Form Input Data Siswa</string>
     <string name="btn_goto_calculator">2. Kalkulator Matematika</string>
-    <string name="btn_goto_document">3. Dokumen &amp; Informasi</string>
-    <string name="btn_open_maps">4. Buka Peta Lokasi</string>
+    <string name="btn_open_maps">3. Buka Peta Lokasi</string>
     
     <!-- Feature Fragment -->
     <string name="feature_title">Form Penilaian</string>
@@ -58,11 +54,6 @@
     <string name="btn_clear_calc">BERSIHKAN</string>
     <string name="label_result">Hasil Perhitungan:</string>
     <string name="default_calc_result">0</string>
-    
-    <!-- Document Fragment -->
-    <string name="doc_title">Panduan Penggunaan</string>
-    <string name="doc_content">Aplikasi ini membantu pengelolaan data secara praktis:\n\n1. Gunakan menu samping atau tab untuk berpindah halaman.\n2. Geser kiri-kanan untuk pindah antar halaman dengan cepat.\n3. Menu titik tiga berisi informasi aplikasi.\n4. Form nilai bervalidasi, kalkulator aman dari pembagian nol, dan peta dibuka dengan aman.\n5. Tampilan menyesuaikan mode terang dan gelap.</string>
-    <string name="btn_goto_maps_page">BUKA HALAMAN PETA LOKASI</string>
     
     <!-- Maps Fragment -->
     <string name="maps_title">Peta Lokasi</string>

@@ -8,47 +8,31 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <!-- Main Content Area -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Header gradien pembungkus Toolbar + Tab (aksen Indigo–Violet baru) -->
-        <LinearLayout
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.Alfian04.PopupMenu"
+            app:title=""
+            app:titleTextColor="@color/white" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_header_gradient"
-            android:elevation="8dp"
-            android:orientation="vertical">
+            android:background="@color/primary"
+            app:tabIndicatorColor="@color/white"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#CCFFFFFF" />
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@android:color/transparent"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:popupTheme="@style/ThemeOverlay.Alfian04.PopupMenu"
-                app:title="@string/app_name"
-                app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
-                app:titleTextColor="@color/white" />
-
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tab_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                app:tabIndicatorColor="@color/white"
-                app:tabIndicatorHeight="5dp"
-                app:tabIndicatorFullWidth="false"
-                app:tabMode="scrollable"
-                app:tabSelectedTextColor="@color/white"
-                app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
-                app:tabTextColor="#CCFFFFFF" />
-
-        </LinearLayout>
-
-        <!-- ViewPager2 -->
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
@@ -58,7 +42,6 @@
 
     </LinearLayout>
 
-    <!-- Navigation Drawer -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

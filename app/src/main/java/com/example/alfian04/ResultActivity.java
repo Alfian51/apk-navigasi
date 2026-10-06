@@ -67,8 +67,7 @@ public class ResultActivity extends AppCompatActivity {
                 int color = status.equalsIgnoreCase("LULUS")
                         ? ContextCompat.getColor(this, R.color.success)
                         : ContextCompat.getColor(this, R.color.error);
-                tvStatus.setBackgroundTintList(android.content.res.ColorStateList.valueOf(color));
-                tvStatus.setTextColor(ContextCompat.getColor(this, R.color.white));
+                tvStatus.setTextColor(color);
             } else {
                 tvStatus.setText("-");
             }
